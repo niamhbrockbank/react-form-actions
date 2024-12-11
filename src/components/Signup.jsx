@@ -1,6 +1,12 @@
 export default function Signup() {
+  function signUpAction(formData) {
+    const enteredEmail = formData.get("email");
+
+    console.log(enteredEmail);
+  }
+
   return (
-    <form>
+    <form action={signUpAction}>
       <h2>Welcome on board!</h2>
       <p>We just need a little bit of data from you to get you started 🚀</p>
 
